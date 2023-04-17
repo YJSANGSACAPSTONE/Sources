@@ -152,6 +152,7 @@ html, body{ width:100%; height:100%; }
 #subFooter{ padding-top:50px; }
 
 #subFooter ul{ display:flex; justify-content:space-around; }
+
 #subFooter img{ width:60px; }
 
 #challenge{ padding:50px 0; }
@@ -164,6 +165,7 @@ html, body{ width:100%; height:100%; }
 #challenge .challenge_list{ padding:20px 0; }
 #challenge .challenge_list > ul{ display:flex; justify-content: space-between; align-content: flex-start; }
 #challenge .challenge_list > ul > li{ width:calc(25% - 20px); }
+
 #challenge .challenge_list div{ width:100%; height:180px; background:#b5b5b5; border-radius:10px; cursor:pointer; }
 
 #challenge .challenge_area{ width:80%; padding:20px 40px; }
@@ -181,3 +183,4 @@ html, body{ width:100%; height:100%; }
 #challenge .read_content{ width:100%; padding:20px; background:#ededed; height:200px; font-size:24px; border-radius:10px; }
 #challenge .read_btn{ width:100%; text-align: right; }
 #challenge .read_btn button{ background:#999; border:solid 1px #d4d4d4; border-radius:5px; width:100px; padding:10px 0; font-size:20px; cursor:pointer; color:#fff; }
+
