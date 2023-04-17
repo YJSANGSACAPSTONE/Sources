@@ -102,7 +102,8 @@ html, body{ width:100%; height:100%; }
 #listModal .btn_area img{ width:20px; vertical-align:middle; margin-right:10px; }
 #listModal .btn_area button{ background:#f4f4f4; border:solid 1px #d4d4d4; border-radius:5px; width:45%; padding:5px 0; font-size:18px; cursor:pointer; }
 #listModal .text_area{ width:100%; padding-top:20px; }
-#listModal .text_area textarea{ width:100%; border:solid 1px #8e8e8e; border-radius:10px; background:#e7e7e7; height:200px; font-size:15px; text-align:left; padding:15px; color:#8e8e8e; resize:none; }
+#listModal .text_area textarea{ width:100%; border:solid 1px #8e8e8e; border-radius:10px; background:#e7e7e7; height:200px; font-size:15px; text-align:left; padding:15px; color:#333; resize:none; }
+#listModal .etcClass{ text-align: left; width:100%; }
 
 #listModal .editReminder img{ width:18px; }
 #listModal .editReminder { font-size:18px; width:100%; padding-top:20px; display:flex; justify-content:space-between; }
@@ -151,7 +152,7 @@ html, body{ width:100%; height:100%; }
 #subFooter{ padding-top:50px; }
 
 #subFooter ul{ display:flex; justify-content:space-around; }
-#subFooter img{ width:80px; }
+#subFooter img{ width:60px; }
 
 #challenge{ padding:50px 0; }
 
@@ -163,5 +164,20 @@ html, body{ width:100%; height:100%; }
 #challenge .challenge_list{ padding:20px 0; }
 #challenge .challenge_list > ul{ display:flex; justify-content: space-between; align-content: flex-start; }
 #challenge .challenge_list > ul > li{ width:calc(25% - 20px); }
-#challenge .challenge_list div{ width:100%; height:180px; background:#b5b5b5; border-radius:10px; }
+#challenge .challenge_list div{ width:100%; height:180px; background:#b5b5b5; border-radius:10px; cursor:pointer; }
+
 #challenge .challenge_area{ width:80%; padding:20px 40px; }
+
+#challenge .challenge_read{ width:80%; padding:20px 40px; }
+
+#challenge .challenge_read > div{ display:flex; margin-bottom:30px; }
+#challenge .challenge_read img{ width:80px; }
+#challenge .read_title{ justify-content: center; grid-gap:70px; align-items:center; }
+#challenge .read_title > p{ font-size:45px; font-size:bold; }
+#challenge .read_info{ width:100%; border:solid 2px #ededed; color:#999; font-weight:bold; }
+#challenge .read_info > div{ width:50%; }
+#challenge .read_info img{ width:100%; height:100%; }
+#challenge .read_info > .info_text{ display:flex; padding:20px; flex-direction: column; grid-gap: 20px; }
+#challenge .read_content{ width:100%; padding:20px; background:#ededed; height:200px; font-size:24px; border-radius:10px; }
+#challenge .read_btn{ width:100%; text-align: right; }
+#challenge .read_btn button{ background:#999; border:solid 1px #d4d4d4; border-radius:5px; width:100px; padding:10px 0; font-size:20px; cursor:pointer; color:#fff; }
