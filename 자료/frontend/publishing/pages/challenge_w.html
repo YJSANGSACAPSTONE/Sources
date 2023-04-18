@@ -12,7 +12,7 @@
 		<div class="container_inner">
 			<div>
 				<ul>
-					<li class="sub_logo">
+					<li class="sub_logo" >
 						<p>갓생플래너</p>
 						<img src="./img/logo.png" alt="logo">
 					</li>
@@ -97,7 +97,7 @@
 							<textarea name="" id="" cols="30" rows="10" placeholder="내용을 작성하세요..."></textarea>
 						</div>
 						<div class="read_btn">
-							<button>참가신청</button>
+							<button>챌린지등록</button>
 						</div>
 					</li>
 				</ul>
@@ -119,22 +119,6 @@
 	</div><!-- subFooter end -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<script>
-	$(function() {
-		// 파일 선택 시
-		$("#thumbnail").click(function() {
-            $("#uploadInput").trigger("click");
-        });
-        $("#uploadInput").change(function() {
-
-            var reader = new FileReader();
-            reader.onload = function(e) {
-                // 선택한 파일의 데이터 URL을 가져와서 이미지의 src로 설정
-                $("#thumbnail").attr("src", e.target.result);
-            }
-            reader.readAsDataURL(this.files[0]);
-        });
-	});
-  </script>
+	<script src="../script/index.js"></script>
 </body>
 </html>
