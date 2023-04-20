@@ -46,7 +46,7 @@ $(function (){
 			let id = $(this).attr("class");
 			id = id.substr(8,id.length-1);
 
-			let title = $(this).text();
+			let title = $(this).children("div").eq(1).children("div").eq(1).text();
 
 			$("#listModal").css('display','flex');
 			$("#listModal h2").text(title);
