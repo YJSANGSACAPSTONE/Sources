@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+	<!-- subHeader Start -->
+	<div id="subHeader" class="container">
+		<div class="container_inner">
+			<div>
+				<ul>
+					<li class="sub_logo">
+						<p>갓생플래너</p>
+						<img src="./img/logo.png" alt="logo">
+					</li>
+					<li class="sub_burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div><!-- subHeader End -->
+	<div id="board" class="container">
+		<div class="container_inner">
+			<div>
+				<ul>
+					<li class="planner_profile">
+						<div onclick="location.href='profile.html'" style="cursor:pointer;">
+							<div class="pl_pro_img">
+								<img src="./img/profile.png" alt="profile">
+								<p>@sinsung test</p>
+							</div>
+							<div class="pl_pro_text">
+								<p>영진상사</p>
+								<p>lv. 10</p>
+							</div>
+						</div>
+						<div class="hot_chart">
+							<h2>Hot 게시물</h2>
+							<ul>
+								<li>
+									<p>간단한 내용</p>
+									<p>04/12 16:32</p>
+								</li>
+								<li>
+									<p>간단한 내용</p>
+									<p>04/12 16:32</p>
+								</li>
+								<li>
+									<p>간단한 내용</p>
+									<p>04/12 16:32</p>
+								</li>
+								<li>
+									<p>간단한 내용</p>
+									<p>04/12 16:32</p>
+								</li>
+								<li>
+									<p>간단한 내용</p>
+									<p>04/12 16:32</p>
+								</li>
+								<li>
+									<p>간단한 내용</p>
+									<p>04/12 16:32</p>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="board_area">
+						<div class="search_area">
+							<form action="">
+								<select name="" id="">
+									<option value="001">자유게시판</option>
+									<option value="002">익명게시판</option>
+									<option value="003">공지사항</option>
+									<option value="004">미라클모닝</option>
+									<option value="005">1일 20계단</option>
+									<option value="006">산책위드망고</option>
+								</select>
+								<input type="text" placeholder="게시글 Search . . .">
+								<button>
+									게시글 작성하기 
+									<img src="./img/edit.png" alt="edit">
+								</button>
+							</form>
+						</div>
+						<div class="board_list">
+							<ul>
+								<li onclick="location.href='board_r.html';">
+									<p class="list_title"><h3>챌린지 세개 완료했다 ㅎㅎ 갓생 사는 중</h3></p>
+									<p>ㅈㄱㄴ 요즘 챌린지 완전 부시고 댕겨ㅎㅎㅎ 똑같은 하루라도 알차게 사는 기분들어서 진짜 갓생러됨 ㅠㅠ 재밌는 거 있으면 추천해주랑</p>
+									<div>6분 전 &nbsp;&nbsp;&nbsp; 조회수 : 16</div>
+									<div>
+										<img src="./img/message-icon.png" alt="">13
+										&nbsp;&nbsp;&nbsp; 
+										@youngjin
+									</div>
+								</li>
+								<li onclick="location.href='board_r.html';">
+									<p><h3>챌린지 세개 완료했다 ㅎㅎ 갓생 사는 중</h3></p>
+									<p>ㅈㄱㄴ 요즘 챌린지 완전 부시고 댕겨ㅎㅎㅎ 똑같은 하루라도 알차게 사는 기분들어서 진짜 갓생러됨 ㅠㅠ 재밌는 거 있으면 추천해주랑</p>
+									<div>6분 전 &nbsp;&nbsp;&nbsp; 조회수 : 16</div>
+									<div>
+										<img src="./img/message-icon.png" alt="">31
+										&nbsp;&nbsp;&nbsp; 
+										@youngjin
+									</div>
+								</li>
+								<li onclick="location.href='board_r.html';">
+									<p><h3>챌린지 세개 완료했다 ㅎㅎ 갓생 사는 중</h3></p>
+									<p>ㅈㄱㄴ 요즘 챌린지 완전 부시고 댕겨ㅎㅎㅎ 똑같은 하루라도 알차게 사는 기분들어서 진짜 갓생러됨 ㅠㅠ 재밌는 거 있으면 추천해주랑</p>
+									<div>6분 전 &nbsp;&nbsp;&nbsp; 조회수 : 16</div>
+									<div>
+										<img src="./img/message-icon.png" alt="">22
+										&nbsp;&nbsp;&nbsp; 
+										@youngjin
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- subFooter Start -->
+	<div id="subFooter" class="container">
+		<div class="container_inner">
+			<div>
+				<ul>
+					<li><a href="planner.html"><img src="./img/home.png" alt="home"></a></li>
+					<li><a href="board.html"><img src="./img/list.png" alt="list"></a></li>
+					<li><a href="challenge.html"><img src="./img/flag.png" alt="flag"></a></li>
+					<li><a href="profile.html"><img src="./img/user.png" alt="user"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div><!-- subFooter end -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="../script/index.js"></script>
+</body>
+</html>
