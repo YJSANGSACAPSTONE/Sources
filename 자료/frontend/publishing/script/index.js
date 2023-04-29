@@ -132,6 +132,21 @@ $(function (){
         });
         // Planner Write------------------------------------------------------------
 
+        // 내 정보수정 이미지 변경
+        $("#profile_thumbnail").click(function() {
+            $("#profileImage").trigger("click");
+        });
+        $("#profileImage").change(function() {
+
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                // 선택한 파일의 데이터 URL을 가져와서 이미지의 src로 설정
+                $("#profile_thumbnail").attr("src", e.target.result);
+            }
+            reader.readAsDataURL(this.files[0]);
+        });
+
+        // 내 정보수정 이미지 변경
 
         // subFooter
 
