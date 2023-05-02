@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+	<!-- subHeader Start -->
+	<div id="subHeader" class="container">
+		<div class="container_inner">
+			<div>
+				<ul>
+					<li class="sub_logo">
+						<p>갓생플래너</p>
+						<img src="./img/logo.png" alt="logo">
+					</li>
+					<li class="sub_burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div><!-- subHeader End -->
+	<div id="board" class="container">
+		<div class="container_inner">
+			<div>
+				<ul>
+					<li class="planner_profile">
+						<div onclick="location.href='profile.html'" style="cursor:pointer;">
+							<div class="pl_pro_img">
+								<img src="./img/profile.png" alt="profile">
+								<p>@sinsung test</p>
+							</div>
+							<div class="pl_pro_text">
+								<p>영진상사</p>
+								<p>lv. 10</p>
+							</div>
+						</div>
+					</li>
+					<li class="boardlist_area">
+						<div class="board_list">
+							<button class="toListBtn" onclick="location.href='board.html';">목록</button>
+							<ul>
+								<li>
+									<div class="write_cate">
+										<select name="" id="">
+											<option value="001">자유게시판</option>
+											<option value="002">익명게시판</option>
+											<option value="003">공지사항</option>
+											<option value="004">미라클모닝</option>
+											<option value="005">1일 20계단</option>
+											<option value="006">산책위드망고</option>
+										</select>
+									</div>
+									<div class="list_title">
+										<div class="title_pro">
+											<img src="./img/profile.png" alt="profile">
+											<h3>@youngjin</h3>
+										</div>
+										<input type="text">
+									</div>
+									<textarea name="editorTxt" id="editorTxt" cols="30" rows="10"></textarea>
+									<div>
+										<label for="open">공개</label><input type="radio" id="open">
+										<label for="close">비공개</label><input type="radio" id="close">
+									</div>
+									<div>
+										<button class="toListBtn">등록</button>
+									</div>
+								</li>
+							
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- subFooter Start -->
+	<div id="subFooter" class="container">
+		<div class="container_inner">
+			<div>
+				<ul>
+					<li><a href="planner.html"><img src="./img/home.png" alt="home"></a></li>
+					<li><a href="board.html"><img src="./img/list.png" alt="list"></a></li>
+					<li><a href="challenge.html"><img src="./img/flag.png" alt="flag"></a></li>
+					<li><a href="profile.html"><img src="./img/user.png" alt="user"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div><!-- subFooter end -->
+	<script src="../smarteditor/smarteditor2-2.8.2.3/js/HuskyEZCreator.js" charset="UTF-8"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="../script/index.js"></script>
+</body>
+</html>
