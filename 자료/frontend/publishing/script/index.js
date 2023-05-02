@@ -1,7 +1,6 @@
 // script
 
 $(function (){
-
 	// Planner event------------------------------------------------------------
 	 // div 요소에 datepicker 설정
 	  $("#datepickerDiv").click(function() {
@@ -130,8 +129,36 @@ $(function (){
             }
             reader.readAsDataURL(this.files[0]);
         });
+
+        $("#verifyImg").click(function() {
+            $("#verifyInput").trigger("click");
+        });
+        $("#verifyInput").change(function() {
+
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                // 선택한 파일의 데이터 URL을 가져와서 이미지의 src로 설정
+                $("#verifyImg").attr("src", e.target.result);
+            }
+            reader.readAsDataURL(this.files[0]);
+        });
         // Planner Write------------------------------------------------------------
 
+        // 내 정보수정 이미지 변경
+        $("#profile_thumbnail").click(function() {
+            $("#profileImage").trigger("click");
+        });
+        $("#profileImage").change(function() {
+
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                // 선택한 파일의 데이터 URL을 가져와서 이미지의 src로 설정
+                $("#profile_thumbnail").attr("src", e.target.result);
+            }
+            reader.readAsDataURL(this.files[0]);
+        });
+
+        // 내 정보수정 이미지 변경
 
         // subFooter
 
@@ -140,13 +167,10 @@ $(function (){
 		function updateSubFooterPosition() {
 		    var subFooter = $('#subFooter');
 		    if ($(window).scrollTop() + $(window).height() >= $(document).height()) {
-		    	console.log($(window).height());
-		    	console.log($(document.body).height());
 		        // 스크롤이 없는 경우
 		        subFooter.css('position', 'fixed');
 		    } else {
 		        // 스크롤이 있는 경우
-		        console.log(123);
 		        subFooter.css('position', 'sticky');
 		    }
 		}

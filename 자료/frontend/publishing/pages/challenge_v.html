@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+	<!-- subHeader Start -->
+	<div id="subHeader" class="container">
+		<div class="container_inner">
+			<div>
+				<ul>
+					<li class="sub_logo">
+						<p>갓생플래너</p>
+						<img src="./img/logo.png" alt="logo">
+					</li>
+					<li class="sub_burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div><!-- subHeader End -->
+	<div id="challenge" class="container">
+		<div class="container_inner">
+			<div>
+				<ul>
+					<li class="planner_profile">
+						<div onclick="location.href='profile.html'" style="cursor:pointer;">
+							<div class="pl_pro_img">
+								<img src="./img/profile.png" alt="profile">
+								<p>@sinsung test</p>
+							</div>
+							<div class="pl_pro_text">
+								<p>영진상사</p>
+								<p>lv. 10</p>
+							</div>
+						</div>
+					</li>
+					<li class="challenge_read">
+						<div class="read_title">
+							<img src="./img/flag.png" alt="flag">
+							<p>Miracle Morning</p>
+						</div>
+						<div class="read_info">
+							<div class="verify_title">
+								<h3>
+									본인의 인증사진을 업로드해주세요.
+									<br/>
+									(양식에 맞춰 업로드해주세요)
+								</h3>
+							</div>
+							<div class="verify_img">
+								<img src="./img/camera.png" alt="camera" id="verifyImg">
+								<input id="verifyInput" type="file">
+							</div>
+							<div class="verify_text">
+								<h3>올바른 촬영 Tip</h3>
+								<p>- <span>인증 목적에 맞게</span> 구도를 설정해주세요.</p>
+								<p>- <span>밝은 배경에서</span>인증 장면을 촬영하세요.</p>
+								<p>- 혹시 촬영이 안되신다면 <span>"휴대폰설정>어플리케이션>권한</span>에서 <span>카메라 허용</span>으로 선택해주세요.</p>
+							</div>
+						</div>
+						<div class="read_content">
+							<p>아침에 일어나서 사진 찍는게 어려운 일 일까요?! 일단 저는 어렵습니다...</p>
+						</div>
+						<div class="read_btn">
+							<button onclick="location.href='challenge_r.html';">인증</button>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- subFooter Start -->
+	<div id="subFooter" class="container">
+		<div class="container_inner">
+			<div>
+				<ul>
+					<li><a href="planner.html"><img src="./img/home.png" alt="home"></a></li>
+					<li><a href="board.html"><img src="./img/list.png" alt="list"></a></li>
+					<li><a href="challenge.html"><img src="./img/flag.png" alt="flag"></a></li>
+					<li><a href="profile.html"><img src="./img/user.png" alt="user"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div><!-- subFooter end -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="../script/index.js"></script>
+</body>
+</html>
